@@ -1,0 +1,8 @@
+{
+  "name": "karma-test-sample",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "angular-mocks": "~1.3.5"
+  }
+}

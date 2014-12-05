@@ -5,12 +5,12 @@ module.exports = function(config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine'],
-    files: ['test/*.js', 'test/*.coffee'],
+    files: ['test/*.js', 'test/coffee.coffee', 'test/coverage.coffee'],
     exclude: [],
     //增加coffee的预处理器
     preprocessors: {
       'test/*.coffee': ['coffee'],
-      'test/*.js': ['coverage'],
+      'test/*.js': ['coverage'], //覆盖测试报告的生成
       'test/*.coffee': ['coverage']
     },
     reporters: ['progress', 'coverage'],
